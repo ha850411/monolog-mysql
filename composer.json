@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MySQLHandler\\": "src"
+            "Easonlee\\MonologMysql\\": "src/"
         }
     }
 }

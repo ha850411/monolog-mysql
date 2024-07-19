@@ -1,6 +1,6 @@
 <?php
 
-namespace MySQLHandler;
+namespace Easonlee\MonologMysql;
 
 use Monolog\Handler\AbstractProcessingHandler;
 
