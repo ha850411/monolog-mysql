@@ -6,9 +6,16 @@ use Monolog\Handler\AbstractProcessingHandler;
 
 class MySQLHandler extends AbstractProcessingHandler
 {
-    protected function write($connection, array $record): void
+    private $connection;
+
+    public function __construct($connection)
     {
-        $connection->insert([
+        $this->connection = $connection;
+    }
+
+    protected function write(array $record): void
+    {
+        $this->connection->insert([
             'channel' => $record['channel'],
             'level' => $record['level'],
             'message' => $record['message'],
