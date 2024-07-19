@@ -35,10 +35,5 @@
         "psr-4": {
             "MySQLHandler\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests"
-        }
     }
 }
